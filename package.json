@@ -1,0 +1,12 @@
+{
+  "name": "sagumi-capstone",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optimalisasi Layanan Informasi Produk dan Pengelolaan Antrian Pesanan Pelanggan pada UMKM Sagumi (A26-CS277)",
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @sagumi/web dev",
+    "dev:api": "pnpm --filter @sagumi/api dev",
+    "build:web": "pnpm --filter @sagumi/web build"
+  }
+}
