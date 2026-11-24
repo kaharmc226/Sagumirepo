@@ -1,0 +1,24 @@
+# Normalize line endings: LF in the repo for everyone (Windows, macOS, Linux)
+* text=auto eol=lf
+
+# Windows-only scripts keep CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary files: never diff or convert
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.webp   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.docx   binary
+*.xlsx   binary
+*.joblib binary
+*.pkl    binary
+*.faiss  binary
+
+# Lockfile: don't show as huge diffs in PRs
+package-lock.json linguist-generated=true -diff

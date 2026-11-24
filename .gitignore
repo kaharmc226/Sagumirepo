@@ -29,6 +29,22 @@ venv/
 .mypy_cache/
 .coverage
 htmlcov/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# AI service: data & model artifacts
+# Raw/interim data may contain customer personal data -> never commit
+services/ai/data/raw/
+services/ai/data/interim/
+# Large model/index artifacts (commit only small final models via `git add -f` after team agreement)
+*.joblib
+*.pkl
+*.pickle
+*.faiss
+*.h5
+*.pt
+*.onnx
+*.safetensors
 
 # Node.js
 node_modules/

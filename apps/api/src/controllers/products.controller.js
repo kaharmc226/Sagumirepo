@@ -14,6 +14,7 @@ export async function listProducts(req, res, next) {
 
     const { data, error } = await query;
     if (error) {
+      console.error('[Supabase] listProducts:', error);
       throw new AppError(500, 'INTERNAL_ERROR', 'Gagal mengambil daftar produk');
     }
 
@@ -36,6 +37,7 @@ export async function getProductBySlug(req, res, next) {
       .maybeSingle();
 
     if (error) {
+      console.error('[Supabase] getProductBySlug:', error);
       throw new AppError(500, 'INTERNAL_ERROR', 'Gagal mengambil detail produk');
     }
 

@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- Node.js 20+ and npm
-- Python 3.11+ (for `services/ai`)
+- Node.js 20+ and npm (version pinned in `.nvmrc`)
+- Python 3.11+ (for `services/ai`, pinned in `services/ai/.python-version`)
 - Access to the team Supabase project (ask Kahar)
 
 ## 1. Clone and install
@@ -37,8 +37,8 @@ Copy `.env.example` to `.env` in the repo root and fill in the real values (get 
 Already done on the team Supabase project. For a fresh project:
 
 1. Supabase Dashboard → **SQL Editor**.
-2. Run [`apps/api/db/schema.sql`](../apps/api/db/schema.sql) and choose **Run and enable RLS**.
-3. Run [`apps/api/db/seed.sql`](../apps/api/db/seed.sql).
+2. Run [`apps/api/db/schema.sql`](../apps/api/db/schema.sql). It enables RLS on every table itself (no policies = the public anon key can't access anything; only Express via the secret key can).
+3. Run [`apps/api/db/seed.sql`](../apps/api/db/seed.sql). Safe to re-run (no duplicates).
 4. Storage → create a **private** bucket named `payment-proofs`.
 
 ## 4. Run the services

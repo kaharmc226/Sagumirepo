@@ -10,14 +10,14 @@
 
 | Done | ID | Task | PIC | Depends | Details |
 |---|---|---|---|---|---|
-| `[ ]` | `OPS-01` | Finalisasi & submit Project Plan + fakta integritas | Kahar | — | [View](#ops-01) |
-| `[ ]` | `OPS-02` | Isi logbook Checkpoint 1 | Semua | — | [View](#ops-02) |
+| `[x]` | `OPS-01` | Finalisasi & submit Project Plan + fakta integritas | Kahar | — | [View](#ops-01) |
+| `[x]` | `OPS-02` | Isi logbook Checkpoint 1 | Semua | — | [View](#ops-02) |
 | `[ ]` | `OPS-03` | Ajukan request advisor | Kahar | `OPS-01` | [View](#ops-03) |
 | `[x]` | `OPS-04` | Setup monorepo GitHub + branch rules + README skeleton | Kahar | — | [View](#ops-04) |
 | `[x]` | `OPS-05` | Kontrak API v1 (`API_CONTRACT.md`, FS↔AE↔DS) | Kahar / Al-Fath / Raffi | — | [View](#ops-05) |
 | `[ ]` | `OPS-06` | Mockup Figma: katalog, checkout, tracking, dashboard | Annisa | — | [View](#ops-06) |
 | `[ ]` | `OPS-07` | Minta data penjualan + katalog + FAQ ke Owner | Rezki / Kahar | — | [View](#ops-07) |
-| `[ ]` | `OPS-08` | Setup Supabase (DB + bucket `payment-proofs`) | Kahar | — | [View](#ops-08) |
+| `[x]` | `OPS-08` | Setup Supabase (DB + bucket `payment-proofs`) | Kahar | — | [View](#ops-08) |
 | `[ ]` | `OPS-09` | Skeleton FastAPI + `/health` + OpenAPI docs | Al-Fath | — | [View](#ops-09) |
 | `[ ]` | `OPS-10` | Pipeline deploy awal (Vercel + Render) | Kahar | `OPS-04` | [View](#ops-10) |
 
@@ -32,9 +32,9 @@
 | `[ ]` | `FE-01` | Setup React + Vite + Tailwind + shadcn, routing, layout | Annisa | `OPS-06` | [View](#fe-01) |
 | `[ ]` | `FE-02` | Komponen dasar: button, input, card, toast, loader | Annisa | `FE-01` | [View](#fe-02) |
 | `[ ]` | `FE-03` | Halaman katalog + detail produk (mock → API) | Annisa | `BE-03` | [View](#fe-03) |
-| `[ ]` | `BE-01` | Setup Express + struktur + error middleware + CORS + Joi | Kahar | `OPS-05` | [View](#be-01) |
-| `[ ]` | `BE-02` | Skema DB + seed katalog | Kahar | `OPS-08` | [View](#be-02) |
-| `[ ]` | `BE-03` | `GET /api/v1/products` & `/:slug` | Kahar | `BE-02` | [View](#be-03) |
+| `[x]` | `BE-01` | Setup Express + struktur + error middleware + CORS + Joi | Kahar | `OPS-05` | [View](#be-01) |
+| `[x]` | `BE-02` | Skema DB + seed katalog | Kahar | `OPS-08` | [View](#be-02) |
+| `[x]` | `BE-03` | `GET /api/v1/products` & `/:slug` | Kahar | `BE-02` | [View](#be-03) |
 | `[ ]` | `DS-01` | Ekstraksi & wrangling data penjualan | Rezki | `OPS-07` | [View](#ds-01) |
 | `[ ]` | `DS-02` | Pertanyaan bisnis + data dictionary | Rezki | `DS-01` | [View](#ds-02) |
 | `[ ]` | `DS-03` | Agregasi harian (analytics & forecast basis) | Fatih | `DS-01` | [View](#ds-03) |
