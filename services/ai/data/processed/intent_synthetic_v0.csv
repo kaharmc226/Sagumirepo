@@ -1,0 +1,102 @@
+text,intent
+Keripik sagu original harganya berapa kak?,tanya_produk
+Berapa harga keripik sagu pedas?,tanya_produk
+Hrg bagea sagu kenari brp ya?,tanya_produk
+Ada varian rasa apa aja di Sagumi?,tanya_produk
+Produk yg paling laris apa min?,tanya_produk
+Kue sagu keju toples isinya berapa gram?,tanya_produk
+Apakah brownies sagu bebas gluten?,tanya_produk
+Stick sagu balado rasanya pedas banget gak?,tanya_produk
+Paket oleh-oleh hemat isinya apa saja?,tanya_produk
+Bagea sagu cokelat ready stok gak kak?,tanya_produk
+Keripik sagu keju harganya brp per bungkus?,tanya_produk
+Tahan berapa lama cemilan sagunya kalau dikirim luar kota?,tanya_produk
+Bahan utamanya beneran dari tepung sagu asli Kendari?,tanya_produk
+Ada varian manis selain brownies sagu?,tanya_produk
+Kue bangkit sagu pandan ada?,tanya_produk
+Daftar menu dan harga lengkap Sagumi dong min,tanya_produk
+Stick sagu rumput laut gurih gak?,tanya_produk
+Beda bagea klasik sama bagea kenari apa ya?,tanya_produk
+Yang pedas harganya berapa?,tanya_produk
+Produk sagumi halal dan aman buat anak-anak gak?,tanya_produk
+Brp harga paket bundling oleh-oleh?,tanya_produk
+Kerpik sagu origianl msh ada stok?,tanya_produk
+Bagea sagu teksturnya keras atau renyah kak?,tanya_produk
+Rekomendasi cemilan buat oleh-oleh keluarga dong,tanya_produk
+Ada diskon kalau beli banyak?,tanya_produk
+Saya mau pesan keripik sagu 3 bungkus,pemesanan
+Bagaimana cara memesan produk Sagumi?,pemesanan
+Cara order lewat website gmn ya kak?,pemesanan
+Mau pesen bagea kenari 2 dan brownies 1,pemesanan
+Transfer pembayarannya ke rekening mana?,pemesanan
+Bukti transfer diupload di mana ya?,pemesanan
+Apakah bisa kirim ke luar kota Kendari?,pemesanan
+Ongkir ke Makassar kira-kira berapa hari?,pemesanan
+Gimana cara melacak status pesanan saya?,pemesanan
+Saya sudah dapat kode SGM-20261124-A1B2 cek statusnya di mana?,pemesanan
+Bisa COD atau harus transfer dulu min?,pemesanan
+Setelah bayar berapa lama pesanan diproses?,pemesanan
+Cara checkout keranjang gimana kak?,pemesanan
+Mau beli paket oleh-oleh hemat 4 box buat besok,pemesanan
+Bisa kirim pakai JNE atau J&T gak?,pemesanan
+Orderan saya masuk antrian nomor berapa?,pemesanan
+Kalau pesan hari ini kapan dikirimnya?,pemesanan
+Minimal order berapa bungkus kak?,pemesanan
+Saya mau tambah pesanan ke order yang barusan dibuat,pemesanan
+Bisa pesan untuk acara kantor jumlah besar?,pemesanan
+Gimana cara pesan bagea sagu online?,pemesanan
+Saya sudah transfer tapi lupa simpan kode referensi,pemesanan
+Bisa bayar pakai QRIS gak min?,pemesanan
+Alamat toko atau pickup di Kendari di mana ya?,pemesanan
+Cara cek antrian pesanan FIFO gimana?,pemesanan
+Pesanan saya sudah 3 hari belum sampai juga!,keluhan
+Keripik yang saya terima hancur dan remuk semua,keluhan
+Saya pesan rasa pedas tapi yang datang malah original,keluhan
+Jumlah barang kurang 2 bungkus dari yang saya bayar,keluhan
+Sudah transfer dari pagi tapi status belum dikonfirmasi,keluhan
+Kenapa pesanan saya dibatalkan sepihak tanpa kabar?,keluhan
+Kemasan toples kue sagu pecah pas diterima,keluhan
+Kualitasnya kurang renyah kayak udah mlempem kak,keluhan
+Admin slow respon banget padahal saya mau komplain,keluhan
+Pengiriman telat banget padahal buat oleh-oleh hari ini,keluhan
+Salah kirim varian nih min gimana tanggung jawabnya?,keluhan
+Bukti bayar gagal terus diupload error melulu,keluhan
+Minta refund aja deh pesanan saya kelamaan diproses,keluhan
+Barangnya basi atau bau apek pas dibuka,keluhan
+Kecewa banget pesanan gak sesuai deskripsi,keluhan
+Tolong bantu cek pesanan saya nyangkut terus di menunggu konfirmasi,keluhan
+Paket saya hilang di ekspedisi gimana solusinya?,keluhan
+Saya mau ajukan komplain barang rusak,keluhan
+Total bayar salah hitung kayaknya min tolong cek,keluhan
+Barang kurang satu kotak pas unboxing,keluhan
+Kue sagu keju remuk parah pas sampai,keluhan
+Kok status tidak berubah-ubah sejak kemarin?,keluhan
+Pengen retur produk karena salah rasa,keluhan
+Pesanan telat parah tolong segera ditindaklanjuti,keluhan
+Saya dirugikan karena pesanan salah alamat kirim,keluhan
+Halo kak selamat pagi,lain_lain
+Permisi min mau tanya-tanya dulu boleh?,lain_lain
+Terima kasih banyak ya infonya sangat membantu,lain_lain
+Siapa presiden Indonesia sekarang?,lain_lain
+Tolong buatkan saya kode Python untuk web scraping,lain_lain
+Cuaca di Kendari hari ini hujan gak ya?,lain_lain
+Jam operasional Sagumi buka jam berapa?,lain_lain
+Makasih ya kak sukses terus usahanya,lain_lain
+Hai admin apa kabar?,lain_lain
+Bisa bantu kerjakan tugas matematika saya?,lain_lain
+Info lowongan kerja di Sagumi ada gak?,lain_lain
+Sagumi buka hari Minggu gak min?,lain_lain
+Oke siap terima kasih kak,lain_lain
+Kamu ini bot atau manusia ya?,lain_lain
+Boleh minta resep rendang daging sapi?,lain_lain
+Halo selamat sore Sagumi,lain_lain
+Mantap makasih infonya ya,lain_lain
+Kamu bisa main tebak-tebakan gak?,lain_lain
+Lokasi UMKM Sagumi ada di kota mana?,lain_lain
+Ada akun Instagram atau media sosial Sagumi?,lain_lain
+Selamat malam admin,lain_lain
+Tolong terjemahkan kalimat ini ke bahasa Inggris,lain_lain
+Oke deh nanti saya kabari lagi ya,lain_lain
+Apakah toko buka di hari libur nasional?,lain_lain
+Terima kasih sudah melayani dengan baik,lain_lain
+
