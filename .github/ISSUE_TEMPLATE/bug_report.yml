@@ -1,0 +1,34 @@
+name: Bug Report
+description: Report a bug in API, Web, or AI service
+title: "[FIX-ID] Short bug description"
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Module / Area
+      options:
+        - apps/api
+        - apps/web
+        - services/ai
+        - docs / setup
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear description of the bug and expected behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. ...
+        2. ...
+    validations:
+      required: true
