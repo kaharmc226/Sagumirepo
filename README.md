@@ -38,6 +38,7 @@ Sagumirepo/
 | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Stack, system flow, database, security rules |
 | [API_CONTRACT.md](docs/API_CONTRACT.md) | All endpoints, payloads and error codes |
 | [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Module ownership, branches, commits, PRs |
+| [TASKS.md](docs/TASKS.md) | Sprint 0–4 checklist, owners, and DoD |
 
 ## Team A26-CS277
 
