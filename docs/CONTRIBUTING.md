@@ -20,11 +20,41 @@ One module, one owner. Changes to someone else's module must be reviewed by that
 
 ## Branches
 
-> The branch workflow is still being finalized. Until then, ask Kahar before pushing directly to `main`.
+| Branch | Purpose | How code gets in |
+|---|---|---|
+| `main` | Stable, deployed, demo-ready | Merge from `dev` only (by Kahar, after testing) |
+| `dev` | Shared integration branch (default branch) | Pull Request + 1 review |
+| `feat/*`, `fix/*`, `docs/*` | One task by one person | Push freely |
 
-- Feature branch naming: `feat/<task-id>-<short-slug>`, e.g. `feat/BE-05-create-order`.
-- Bug fixes: `fix/<task-id>-<short-slug>`.
-- Docs: `docs/<short-slug>`.
+**Never push directly to `main` or `dev`.**
+
+Branch naming:
+
+- Features: `feat/<task-id>-<short-slug>`, e.g. `feat/BE-05-create-order`
+- Bug fixes: `fix/<task-id>-<short-slug>`
+- Docs: `docs/<short-slug>`
+
+### Daily workflow
+
+```bash
+# 1. Start a task from the latest dev
+git checkout dev
+git pull
+git checkout -b feat/BE-05-create-order
+
+# 2. Work, commit, push
+git add -A
+git commit -m "feat(api): add POST /orders endpoint"
+git push -u origin feat/BE-05-create-order
+
+# 3. Open a Pull Request on GitHub: base = dev, compare = your branch
+
+# 4. After it is merged, go back to dev and repeat
+git checkout dev
+git pull
+```
+
+If `dev` changes while you're still working, update your branch with `git pull origin dev` and fix any conflicts before opening the PR.
 
 ## Commit messages
 
