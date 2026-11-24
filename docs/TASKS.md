@@ -18,7 +18,7 @@
 | `[ ]` | `OPS-06` | Mockup Figma: katalog, checkout, tracking, dashboard | Annisa | — | [View](#ops-06) |
 | `[ ]` | `OPS-07` | Minta data penjualan + katalog + FAQ ke Owner | Rezki / Kahar | — | [View](#ops-07) |
 | `[x]` | `OPS-08` | Setup Supabase (DB + bucket `payment-proofs`) | Kahar | — | [View](#ops-08) |
-| `[ ]` | `OPS-09` | Skeleton FastAPI + `/health` + OpenAPI docs | Al-Fath | — | [View](#ops-09) |
+| `[x]` | `OPS-09` | Skeleton FastAPI + `/health` + OpenAPI docs | Al-Fath | — | [View](#ops-09) |
 | `[ ]` | `OPS-10` | Pipeline deploy awal (Vercel + Render) | Kahar | `OPS-04` | [View](#ops-10) |
 
 ---
@@ -40,7 +40,7 @@
 | `[ ]` | `DS-03` | Agregasi harian (analytics & forecast basis) | Fatih | `DS-01` | [View](#ds-03) |
 | `[ ]` | `DS-04` | Dataset intent (≥4 kelas) + augmentasi + split | Fatih | `OPS-07` | [View](#ds-04) |
 | `[ ]` | `AI-01` | Eksperimen intent: LinearSVC vs LogReg | Raffi | `DS-04` | [View](#ai-01) |
-| `[ ]` | `AI-02` | FastAPI `/classify-intent` + docs | Al-Fath | `AI-01`, `OPS-09` | [View](#ai-02) |
+| `[x]` | `AI-02` | FastAPI `/classify-intent` + docs | Al-Fath | `AI-01`, `OPS-09` | [View](#ai-02) |
 | `[ ]` | `AI-03` | Prompt template chatbot + knowledge base FAQ | Al-Fath | `OPS-07` | [View](#ai-03) |
 | `[ ]` | `AI-04` | Integrasi Gemini dasar via FastAPI `/chat` | Al-Fath | `AI-03`, `OPS-09` | [View](#ai-04) |
 

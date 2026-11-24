@@ -53,4 +53,17 @@ Check: http://localhost:4000/api/v1/health and http://localhost:4000/api/v1/prod
 
 **Web (React + Vite)** — not scaffolded yet.
 
-**AI service (FastAPI)** — not scaffolded yet.
+**AI service (FastAPI)**
+
+```bash
+cd services/ai
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1  |  macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+Check: http://localhost:8000/health and Swagger UI at http://localhost:8000/docs
+
+- Works on Python 3.11+ (tested locally on Python 3.14; Render uses `services/ai/.python-version`).
+- `models/*.joblib` files are gitignored; on first startup FastAPI auto-trains the v0 baseline from `data/processed/intent_synthetic_v0.csv` (or run `python -m training.train_intent` manually). See [services/ai/README.md](../services/ai/README.md) for Colab/Kaggle training notes.
