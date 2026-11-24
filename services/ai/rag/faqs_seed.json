@@ -1,0 +1,105 @@
+[
+  {
+    "id": "faq:jam-operasional",
+    "category": "operasional",
+    "title": "Jam operasional Sagumi",
+    "content": "Sagumi melayani pemesanan online setiap hari pukul 08.00–20.00 WITA."
+  },
+  {
+    "id": "faq:cara-pesan",
+    "category": "pemesanan",
+    "title": "Cara memesan produk Sagumi",
+    "content": "Pilih produk di katalog, isi formulir pemesanan, unggah bukti transfer (JPG/PNG/WebP maksimal 5 MB), lalu simpan ID Referensi (contoh: SGM-20261124-A1B2) untuk melacak status pesanan."
+  },
+  {
+    "id": "faq:lacak-pesanan",
+    "category": "pemesanan",
+    "title": "Cara melacak status pesanan",
+    "content": "Masukkan ID Referensi (contoh: SGM-20261124-A1B2) pada halaman Lacak Pesanan untuk melihat status terbaru dan riwayat proses."
+  },
+  {
+    "id": "faq:pengiriman-luar-kota",
+    "category": "pengiriman",
+    "title": "Pengiriman luar kota",
+    "content": "Ya, produk Sagumi dikemas rapat sehingga aman untuk pengiriman dalam maupun luar kota Kendari."
+  },
+  {
+    "id": "faq:waktu-proses-fifo",
+    "category": "pemesanan",
+    "title": "Estimasi proses antrian FIFO",
+    "content": "Pesanan diverifikasi dan diproses sesuai urutan antrian masuk (FIFO) pada hari yang sama atau maksimal H+1 kerja."
+  },
+  {
+    "id": "product:keripik-sagu-original",
+    "category": "produk",
+    "title": "Keripik Sagu Original",
+    "content": "Keripik Sagu Original: Cemilan keripik sagu renyah rasa original khas Kendari. Harga Rp15.000."
+  },
+  {
+    "id": "product:keripik-sagu-pedas",
+    "category": "produk",
+    "title": "Keripik Sagu Pedas",
+    "content": "Keripik Sagu Pedas: Keripik sagu renyah dengan balutan bumbu pedas gurih. Harga Rp16.000."
+  },
+  {
+    "id": "product:keripik-sagu-keju",
+    "category": "produk",
+    "title": "Keripik Sagu Keju",
+    "content": "Keripik Sagu Keju: Keripik sagu dengan taburan keju gurih. Harga Rp18.000."
+  },
+  {
+    "id": "product:bagea-sagu-klasik",
+    "category": "produk",
+    "title": "Bagea Sagu Klasik",
+    "content": "Bagea Sagu Klasik: Kue bagea tradisional berbahan sagu khas Sulawesi Tenggara. Harga Rp20.000."
+  },
+  {
+    "id": "product:bagea-sagu-kenari",
+    "category": "produk",
+    "title": "Bagea Sagu Kenari",
+    "content": "Bagea Sagu Kenari: Bagea sagu panggang dengan campuran kacang kenari. Harga Rp25.000."
+  },
+  {
+    "id": "product:bagea-sagu-cokelat",
+    "category": "produk",
+    "title": "Bagea Sagu Cokelat",
+    "content": "Bagea Sagu Cokelat: Varian modern kue bagea sagu dengan rasa cokelat. Harga Rp24.000."
+  },
+  {
+    "id": "product:kue-sagu-keju-toples",
+    "category": "produk",
+    "title": "Kue Sagu Keju Toples",
+    "content": "Kue Sagu Keju Toples: Kue kering sagu keju lumer kemasan toples. Harga Rp45.000."
+  },
+  {
+    "id": "product:stick-sagu-balado",
+    "category": "produk",
+    "title": "Stick Sagu Balado",
+    "content": "Stick Sagu Balado: Stik sagu goreng renyah rasa balado. Harga Rp15.000."
+  },
+  {
+    "id": "product:stick-sagu-rumput-laut",
+    "category": "produk",
+    "title": "Stick Sagu Rumput Laut",
+    "content": "Stick Sagu Rumput Laut: Stik sagu renyah dengan taburan rumput laut. Harga Rp17.000."
+  },
+  {
+    "id": "product:brownies-sagu-panggang",
+    "category": "produk",
+    "title": "Brownies Sagu Panggang",
+    "content": "Brownies Sagu Panggang: Brownies panggang bebas gluten berbahan dasar tepung sagu. Harga Rp35.000."
+  },
+  {
+    "id": "product:kue-bangkit-sagu-pandan",
+    "category": "produk",
+    "title": "Kue Bangkit Sagu Pandan",
+    "content": "Kue Bangkit Sagu Pandan: Kue bangkit sagu aroma pandan wangi. Harga Rp22.000."
+  },
+  {
+    "id": "product:paket-oleh-oleh-sagumi-hemat",
+    "category": "produk",
+    "title": "Paket Oleh-Oleh Sagumi Hemat",
+    "content": "Paket Oleh-Oleh Sagumi Hemat: Paket bundling isi 3 varian cemilan sagu pilihan. Harga Rp50.000."
+  }
+]
+

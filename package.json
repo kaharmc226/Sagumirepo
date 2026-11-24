@@ -11,6 +11,8 @@
   },
   "scripts": {
     "dev:api": "npm run dev --workspace @sagumi/api",
-    "start:api": "npm run start --workspace @sagumi/api"
+    "start:api": "npm run start --workspace @sagumi/api",
+    "dev:web": "npm run dev --workspace @sagumi/web",
+    "build:web": "npm run build --workspace @sagumi/web"
   }
 }
