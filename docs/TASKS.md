@@ -15,7 +15,7 @@
 | `[ ]` | `OPS-03` | Ajukan request advisor | Kahar | `OPS-01` | [View](#ops-03) |
 | `[x]` | `OPS-04` | Setup monorepo GitHub + branch rules + README skeleton | Kahar | — | [View](#ops-04) |
 | `[x]` | `OPS-05` | Kontrak API v1 (`API_CONTRACT.md`, FS↔AE↔DS) | Kahar / Al-Fath / Raffi | — | [View](#ops-05) |
-| `[ ]` | `OPS-06` | Mockup Figma: katalog, checkout, tracking, dashboard | Annisa | — | [View](#ops-06) |
+| `[x]` | `OPS-06` | Mockup web interaktif di `apps/web`: katalog, checkout, tracking, dashboard | Kahar / Annisa | — | [View](#ops-06) |
 | `[ ]` | `OPS-07` | Minta data penjualan + katalog + FAQ ke Owner | Rezki / Kahar | — | [View](#ops-07) |
 | `[x]` | `OPS-08` | Setup Supabase (DB + bucket `payment-proofs`) | Kahar | — | [View](#ops-08) |
 | `[ ]` | `OPS-09` | Skeleton FastAPI + `/health` + OpenAPI docs | Al-Fath | — | [View](#ops-09) |
@@ -29,9 +29,9 @@
 
 | Done | ID | Task | PIC | Depends | Details |
 |---|---|---|---|---|---|
-| `[ ]` | `FE-01` | Setup React + Vite + Tailwind + shadcn, routing, layout | Annisa | `OPS-06` | [View](#fe-01) |
-| `[ ]` | `FE-02` | Komponen dasar: button, input, card, toast, loader | Annisa | `FE-01` | [View](#fe-02) |
-| `[ ]` | `FE-03` | Halaman katalog + detail produk (mock → API) | Annisa | `BE-03` | [View](#fe-03) |
+| `[x]` | `FE-01` | Setup React + Vite + Tailwind + shadcn, routing, layout | Annisa | `OPS-06` | [View](#fe-01) |
+| `[x]` | `FE-02` | Komponen dasar: button, input, card, toast, loader | Annisa | `FE-01` | [View](#fe-02) |
+| `[x]` | `FE-03` | Halaman katalog + detail produk (mock → API) | Annisa | `BE-03` | [View](#fe-03) |
 | `[x]` | `BE-01` | Setup Express + struktur + error middleware + CORS + Joi | Kahar | `OPS-05` | [View](#be-01) |
 | `[x]` | `BE-02` | Skema DB + seed katalog | Kahar | `OPS-08` | [View](#be-02) |
 | `[x]` | `BE-03` | `GET /api/v1/products` & `/:slug` | Kahar | `BE-02` | [View](#be-03) |
@@ -147,9 +147,9 @@
 - **DoD:** `docs/API_CONTRACT.md` disetujui 3 track
 
 #### OPS-06
-- **Task:** Mockup Figma: katalog, checkout, tracking, dashboard
-- **PIC:** Annisa
-- **DoD:** Link Figma final
+- **Task:** Mockup web interaktif di `apps/web`: katalog, checkout, tracking, dashboard owner + login + analytics (menggantikan Figma)
+- **PIC:** Kahar / Annisa
+- **DoD:** Halaman mockup berjalan di `apps/web` (`npm run dev:web`)
 
 #### OPS-07
 - **Task:** Minta data penjualan + katalog + FAQ ke Owner

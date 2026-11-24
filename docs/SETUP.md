@@ -51,6 +51,14 @@ npm run dev:api
 
 Check: http://localhost:4000/api/v1/health and http://localhost:4000/api/v1/products
 
-**Web (React + Vite)** — not scaffolded yet.
+**Web (React + Vite)**
+
+```bash
+npm run dev:web
+```
+
+Open: http://localhost:5173 (loads `VITE_API_BASE_URL` from root `.env`; falls back to mock catalog if API is not running).
+
+Production build check: `npm run build:web`
 
 **AI service (FastAPI)** — not scaffolded yet.
