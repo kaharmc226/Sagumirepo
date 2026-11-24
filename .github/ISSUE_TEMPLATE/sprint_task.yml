@@ -1,0 +1,58 @@
+name: Sprint Task
+description: Create a tracked task for a sprint (FS, AI, or DS)
+title: "[TASK-ID] Short task title"
+labels: ["task"]
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      description: Matches your branch name and logbook (e.g., BE-05, FE-01, AI-02, DS-01)
+      placeholder: "FE-01"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Module / Area
+      options:
+        - apps/api (Kahar)
+        - apps/web (Annisa)
+        - services/ai/app & prompts (Al-Fath)
+        - services/ai/training, models & rag (Raffi)
+        - services/ai/notebooks (Rezki & Fatih)
+        - docs (Shared)
+    validations:
+      required: true
+
+  - type: input
+    id: sprint
+    attributes:
+      label: Sprint
+      placeholder: "Sprint 1"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Goal & Context
+      description: What needs to be built or done?
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Done When (Acceptance Criteria)
+      value: |
+        - [ ] Implementation complete
+        - [ ] Tested locally
+        - [ ] PR opened targeting `dev`
+    validations:
+      required: true
+
+  - type: input
+    id: dependencies
+    attributes:
+      label: Dependencies / Blockers (optional)
+      placeholder: "e.g., Waiting on GET /api/v1/products"
