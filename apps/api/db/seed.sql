@@ -27,4 +27,5 @@ VALUES
   ('Bagaimana cara memesan produk Sagumi?', 'Pilih produk di katalog, isi formulir pemesanan, unggah bukti transfer, lalu simpan ID Referensi untuk melacak status pesanan.', 'pemesanan'),
   ('Bagaimana cara melacak status pesanan?', 'Masukkan ID Referensi (contoh: SGM-20261123-A1B2) pada halaman Lacak Pesanan.', 'pemesanan'),
   ('Apakah produk Sagumi aman dikirim ke luar kota?', 'Ya, produk dikemas rapat sehingga aman untuk pengiriman dalam maupun luar kota Kendari.', 'pengiriman'),
-  ('Berapa lama pesanan diproses setelah pembayaran?', 'Pesanan diverifikasi dan diproses sesuai urutan antrian (FIFO) pada hari yang sama atau maksimal H+1 kerja.', 'pemesanan');
+  ('Berapa lama pesanan diproses setelah pembayaran?', 'Pesanan diverifikasi dan diproses sesuai urutan antrian (FIFO) pada hari yang sama atau maksimal H+1 kerja.', 'pemesanan')
+ON CONFLICT (question) DO NOTHING;

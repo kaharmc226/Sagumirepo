@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS products (
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX IF NOT EXISTS idx_products_slug ON products (slug);
+-- slug sudah ter-index otomatis oleh constraint UNIQUE
+DROP INDEX IF EXISTS idx_products_slug;
 CREATE INDEX IF NOT EXISTS idx_products_available ON products (is_available);
 
 -- ----------------------------------------------------------------------------
@@ -52,7 +53,8 @@ CREATE TABLE IF NOT EXISTS orders (
 
 -- Index untuk antrian FIFO (created_at ASC) dan tracking
 CREATE INDEX IF NOT EXISTS idx_orders_status_created ON orders (status, created_at ASC);
-CREATE INDEX IF NOT EXISTS idx_orders_reference_code ON orders (reference_code);
+-- reference_code sudah ter-index otomatis oleh constraint UNIQUE
+DROP INDEX IF EXISTS idx_orders_reference_code;
 
 -- ----------------------------------------------------------------------------
 -- 3. order_items
@@ -119,6 +121,9 @@ CREATE TABLE IF NOT EXISTS faqs (
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- Mencegah FAQ duplikat saat seed dijalankan ulang (duplikat merusak hasil RAG)
+CREATE UNIQUE INDEX IF NOT EXISTS uq_faqs_question ON faqs (question);
+
 -- ----------------------------------------------------------------------------
 -- 7. owner_users (autentikasi dashboard Owner)
 -- ----------------------------------------------------------------------------
@@ -150,3 +155,17 @@ DROP TRIGGER IF EXISTS trg_orders_updated_at ON orders;
 CREATE TRIGGER trg_orders_updated_at
   BEFORE UPDATE ON orders
   FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+
+-- ----------------------------------------------------------------------------
+-- Row Level Security
+-- RLS aktif di semua tabel TANPA policy => anon/authenticated key tidak bisa
+-- membaca/menulis apa pun. Express memakai service role key (bypass RLS),
+-- sehingga semua akses data wajib lewat API.
+-- ----------------------------------------------------------------------------
+ALTER TABLE products             ENABLE ROW LEVEL SECURITY;
+ALTER TABLE orders               ENABLE ROW LEVEL SECURITY;
+ALTER TABLE order_items          ENABLE ROW LEVEL SECURITY;
+ALTER TABLE order_status_history ENABLE ROW LEVEL SECURITY;
+ALTER TABLE chat_messages        ENABLE ROW LEVEL SECURITY;
+ALTER TABLE faqs                 ENABLE ROW LEVEL SECURITY;
+ALTER TABLE owner_users          ENABLE ROW LEVEL SECURITY;
