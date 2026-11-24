@@ -33,16 +33,22 @@ export default function AdminLoginPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <Input
+            id="owner-email"
+            name="email"
             label="Email Owner"
             type="email"
+            autoComplete="email"
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="owner@sagumi.id"
           />
           <Input
+            id="owner-password"
+            name="password"
             label="Password"
             type="password"
+            autoComplete="current-password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="••••••••"

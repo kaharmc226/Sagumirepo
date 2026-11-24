@@ -55,6 +55,8 @@ export default function TrackingPage() {
         <form onSubmit={handleSearch} className="flex gap-2">
           <div className="flex-1">
             <Input
+              id="reference-code"
+              name="reference_code"
               placeholder="Masukkan kode referensi, mis. SGM-20261124-A1B2"
               value={code}
               onChange={(e) => setCode(e.target.value)}
