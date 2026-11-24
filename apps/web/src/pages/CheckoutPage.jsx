@@ -119,6 +119,9 @@ export default function CheckoutPage() {
             <h2 className="font-semibold text-stone-900">Data Pemesan</h2>
             <div className="grid gap-4 sm:grid-cols-2">
               <Input
+                id="customer-name"
+                name="customer_name"
+                autoComplete="name"
                 label="Nama Lengkap"
                 required
                 placeholder="Budi Santoso"
@@ -126,6 +129,9 @@ export default function CheckoutPage() {
                 onChange={(e) => setForm({ ...form, customer_name: e.target.value })}
               />
               <Input
+                id="customer-phone"
+                name="customer_phone"
+                autoComplete="tel"
                 label="Nomor WhatsApp / HP"
                 required
                 placeholder="081234567890"
@@ -134,6 +140,9 @@ export default function CheckoutPage() {
               />
             </div>
             <Textarea
+              id="customer-address"
+              name="address"
+              autoComplete="street-address"
               label="Alamat Pengiriman"
               required
               rows={2}
@@ -142,6 +151,8 @@ export default function CheckoutPage() {
               onChange={(e) => setForm({ ...form, address: e.target.value })}
             />
             <Input
+              id="order-notes"
+              name="notes"
               label="Catatan (opsional)"
               placeholder="Tolong dibungkus rapi untuk oleh-oleh"
               value={form.notes}
