@@ -1,5 +1,5 @@
 # Folder internal perencanaan & resource
-ASAH/
+.ASAH/
 
 # OS files
 .DS_Store
@@ -35,7 +35,6 @@ node_modules/
 dist/
 build/
 .npm/
-.pnpm-store/
 
 # Logs and temporary files
 *.log

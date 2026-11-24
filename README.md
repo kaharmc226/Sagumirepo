@@ -1,59 +1,53 @@
-# Sagumi — Sistem Katalog, Pemesanan, Antrian FIFO & Asisten AI (A26-CS277)
+# Sagumi — Katalog, Pemesanan, Antrian FIFO & Asisten AI (A26-CS277)
 
-Capstone Project **Asah 2026 (Dicoding × GoTo)** untuk UMKM **Sagumi** (cemilan/oleh-oleh berbahan sagu khas Kendari).
+Capstone Project **Asah 2026 (Dicoding × GoTo)** untuk UMKM **Sagumi**, cemilan/oleh-oleh berbahan sagu khas Kendari.
 
-> **Judul Use Case:** Optimalisasi Layanan Informasi Produk dan Pengelolaan Antrian Pesanan Pelanggan pada UMKM Sagumi
+> **Use case:** Optimalisasi Layanan Informasi Produk dan Pengelolaan Antrian Pesanan Pelanggan pada UMKM Sagumi
 
-## Arsitektur & Tech Stack
+**Stack:** React + Vite · Express · FastAPI · Supabase · Gemini API
 
-- **Frontend (`apps/web`):** React 18 + Vite + Tailwind CSS + shadcn/ui + React Router + Axios + Recharts *(deploy: Vercel)*
-- **Backend (`apps/api`):** Node.js + Express (`/api/v1`) + Joi + JWT *(deploy: Render)*
-- **Database & Storage:** Supabase (PostgreSQL + Storage bucket privat `payment-proofs`)
-- **AI & Data Science Service (`services/ai`):** Python + FastAPI + scikit-learn (TF-IDF + LinearSVC/LogisticRegression) + FAISS (RAG) + Gemini API *(deploy: Render)*
+## Quick start
 
-```text
-Browser (React + Vite) ──► Express API (/api/v1) ◄──► Supabase (Postgres + Storage)
-                                  │
-                                  ▼ HTTP internal
-                           FastAPI AI Service ──► Gemini API + FAISS
+```bash
+npm install
+cp .env.example .env   # fill in real values
+npm run dev:api        # http://localhost:4000/api/v1/health
 ```
 
-## Struktur Monorepo
+Full instructions: [docs/SETUP.md](docs/SETUP.md)
+
+## Repository structure
 
 ```text
 Sagumirepo/
 ├─ apps/
-│  ├─ web/                 # Frontend React + Vite
-│  └─ api/                 # Backend Express API
+│  ├─ api/            # Express API + DB schema/seed (apps/api/db)
+│  └─ web/            # React + Vite frontend
 ├─ services/
-│  └─ ai/                  # FastAPI, training model intent, RAG, prompt, notebooks DS
-├─ docs/
-│  └─ API_CONTRACT.md      # Kontrak API v1 (Publik, Owner/Admin, FastAPI internal)
-├─ .env.example            # Template environment variables
-├─ package.json            # Root scripts
-└─ pnpm-workspace.yaml     # Workspace apps/*
+│  └─ ai/             # FastAPI, intent model, RAG, prompts, DS notebooks
+├─ docs/              # Project documentation
+├─ .env.example
+└─ package.json       # npm workspaces
 ```
 
-## Dokumentasi Teknis
+## Documentation
 
-- [API Contract v1](docs/API_CONTRACT.md)
+| Doc | Contents |
+|---|---|
+| [SETUP.md](docs/SETUP.md) | Local setup, env variables, running services |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Stack, system flow, database, security rules |
+| [API_CONTRACT.md](docs/API_CONTRACT.md) | All endpoints, payloads and error codes |
+| [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Module ownership, branches, commits, PRs |
 
-## Setup Lokal (Ringkas)
+## Team A26-CS277
 
-1. Salin `.env.example` menjadi `.env` di masing-masing service atau root, lalu isi kredensial Supabase & Gemini API.
-2. Install dependensi workspace Node.js:
-   ```bash
-   pnpm install
-   ```
-3. Setup environment Python untuk `services/ai` (FastAPI) menggunakan `.venv`.
-
-## Tim A26-CS277
-
-| Anggota | Learning Path | Peran Utama |
+| Member | Path | Role |
 |---|---|---|
-| Kahar Munajat | FS | Backend, REST API, integrasi, deployment (Leader) |
+| Kahar Munajat | FS | Backend, REST API, integration, deployment (Leader) |
 | Annisa Nur Fitriani | FS | Frontend, UI/UX, chat widget, User Guide |
-| Fatih M. Bintang Possumah | DS | Preprocessing dataset, pelabelan intent, forecast stok |
-| Rezki Alya Pasrun | DS | Data wrangling, EDA, analisis tren & visualisasi bisnis |
-| Mochammad Raffi Fadhillah | AE | Model intent (`training/`, `models/`), evaluasi, RAG |
-| M. Al-Fath Nazriel Rajab | AE | Chatbot Gemini, prompt & guardrail, FastAPI serving/deploy |
+| Fatih M. Bintang Possumah | DS | Dataset preprocessing, intent labeling, stock forecast |
+| Rezki Alya Pasrun | DS | Data wrangling, EDA, sales trend analysis |
+| Mochammad Raffi Fadhillah | AE | Intent model, evaluation, RAG |
+| M. Al-Fath Nazriel Rajab | AE | Gemini chatbot, prompts & guardrails, FastAPI serving |
+
+*FS = Full-Stack · DS = Data Science · AE = AI Engineer*
