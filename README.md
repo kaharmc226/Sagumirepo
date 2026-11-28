@@ -35,6 +35,7 @@ Sagumirepo/
 | Doc | Contents |
 |---|---|
 | [SETUP.md](docs/SETUP.md) | Local setup, env variables, running services |
+| [DEPLOY.md](docs/DEPLOY.md) | Staging deployment on Render + Vercel (`dev`) |
 | [ARCHITECTURE.md](docs/ARCHITECTURE.md) | Stack, system flow, database, security rules |
 | [API_CONTRACT.md](docs/API_CONTRACT.md) | All endpoints, payloads and error codes |
 | [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Module ownership, branches, commits, PRs |

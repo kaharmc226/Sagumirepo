@@ -1,0 +1,58 @@
+services:
+  - type: web
+    name: sagumi-api-staging
+    runtime: node
+    region: singapore
+    plan: free
+    branch: dev
+    buildCommand: npm ci --workspace=@sagumi/api --omit=dev
+    startCommand: npm run start:api
+    healthCheckPath: /api/v1/health
+    buildFilter:
+      paths:
+        - apps/api/**
+        - package.json
+        - package-lock.json
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        value: payment-proofs
+      - key: AI_SERVICE_URL
+        sync: false
+      - key: CORS_ORIGIN
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 7d
+
+  - type: web
+    name: sagumi-ai-staging
+    runtime: python
+    region: singapore
+    plan: free
+    branch: dev
+    rootDir: services/ai
+    buildCommand: pip install -r requirements.txt && python -m training.train_intent
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    buildFilter:
+      paths:
+        - services/ai/**
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        sync: false
+      - key: INTENT_CONFIDENCE_THRESHOLD
+        value: "0.6"
+

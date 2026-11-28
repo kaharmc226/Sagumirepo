@@ -2,7 +2,8 @@ import axios from 'axios';
 
 export const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000/api/v1',
-  timeout: 10000,
+  // 45s to accommodate Render free-tier cold starts in staging
+  timeout: 45000,
 });
 
 export function formatRupiah(amount) {
