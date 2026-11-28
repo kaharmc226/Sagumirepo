@@ -3,6 +3,7 @@ import cors from 'cors';
 import { env } from './config/env.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.js';
 import productsRouter from './routes/products.routes.js';
+import uploadsRouter from './routes/uploads.routes.js';
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.get('/api/v1/health', (_req, res) => {
 });
 
 app.use('/api/v1/products', productsRouter);
+app.use('/api/v1/uploads', uploadsRouter);
 
 app.use(notFoundHandler);
 app.use(errorHandler);
