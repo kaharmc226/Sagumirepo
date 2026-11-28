@@ -30,6 +30,126 @@
     "content": "Pesanan diverifikasi dan diproses sesuai urutan antrian masuk (FIFO) pada hari yang sama atau maksimal H+1 kerja."
   },
   {
+    "id": "faq:status-pesanan",
+    "category": "pemesanan",
+    "title": "Arti status pesanan",
+    "content": "Pesanan melewati status MENUNGGU_KONFIRMASI, DIPROSES, SIAP_DIKIRIM, lalu SELESAI. Pesanan juga dapat berubah menjadi DIBATALKAN. Status terbaru dapat dilihat pada halaman Lacak Pesanan."
+  },
+  {
+    "id": "faq:format-id-referensi",
+    "category": "pemesanan",
+    "title": "Format ID Referensi",
+    "content": "ID Referensi berformat SGM-YYYYMMDD-XXXX (contoh: SGM-20261124-A1B2). Simpan ID ini karena diperlukan untuk melacak dan menanyakan pesanan."
+  },
+  {
+    "id": "faq:catatan-pesanan",
+    "category": "pemesanan",
+    "title": "Catatan khusus pada pesanan",
+    "content": "Formulir pemesanan menyediakan kolom catatan untuk permintaan khusus. Permintaan tersebut akan dikonfirmasi Owner Sagumi sebelum pesanan diproses."
+  },
+  {
+    "id": "faq:pembatalan-pesanan",
+    "category": "pemesanan",
+    "title": "Membatalkan pesanan",
+    "content": "Pembatalan pesanan diajukan kepada Owner Sagumi dengan menyertakan ID Referensi. Jika disetujui, status pesanan berubah menjadi DIBATALKAN. Batas waktu pembatalan belum tersedia dan perlu dikonfirmasi ke Owner."
+  },
+  {
+    "id": "faq:minimal-order",
+    "category": "pemesanan",
+    "title": "Minimal pembelian",
+    "content": "Ketentuan minimal pembelian belum tersedia. Silakan konfirmasi langsung kepada Owner Sagumi."
+  },
+  {
+    "id": "faq:pesanan-jumlah-besar",
+    "category": "pemesanan",
+    "title": "Pesanan dalam jumlah besar",
+    "content": "Untuk pesanan besar atau permintaan khusus, hubungi Owner Sagumi lebih awal agar ketersediaan produk dan jadwal produksi dapat dikonfirmasi."
+  },
+  {
+    "id": "faq:metode-pembayaran",
+    "category": "pembayaran",
+    "title": "Metode pembayaran",
+    "content": "Pembayaran dilakukan melalui transfer bank, lalu bukti transfer diunggah pada formulir pemesanan. Detail rekening tujuan belum tersedia dan perlu dikonfirmasi ke Owner Sagumi."
+  },
+  {
+    "id": "faq:upload-bukti-bayar",
+    "category": "pembayaran",
+    "title": "Format bukti pembayaran",
+    "content": "Bukti transfer diunggah dalam format JPG, PNG, atau WebP dengan ukuran maksimal 5 MB."
+  },
+  {
+    "id": "faq:bukti-bayar-gagal",
+    "category": "pembayaran",
+    "title": "Bukti pembayaran gagal diunggah",
+    "content": "Periksa kembali format berkas (JPG/PNG/WebP) dan ukuran maksimal 5 MB, lalu ulangi unggah. Jika masih gagal, hubungi Owner Sagumi."
+  },
+  {
+    "id": "faq:verifikasi-pembayaran",
+    "category": "pembayaran",
+    "title": "Verifikasi pembayaran",
+    "content": "Bukti pembayaran diverifikasi Owner Sagumi sesuai urutan antrian masuk (FIFO), pada hari yang sama atau maksimal H+1 kerja. Selama belum diverifikasi, status pesanan tetap MENUNGGU_KONFIRMASI."
+  },
+  {
+    "id": "faq:ongkir",
+    "category": "pengiriman",
+    "title": "Ongkos kirim",
+    "content": "Ongkos kirim dihitung terpisah dari harga produk dan bergantung pada tujuan pengiriman. Tarif ongkir belum tersedia dan perlu dikonfirmasi ke Owner Sagumi."
+  },
+  {
+    "id": "faq:alamat-pengiriman",
+    "category": "pengiriman",
+    "title": "Alamat pengiriman",
+    "content": "Alamat pengiriman wajib diisi lengkap pada formulir pemesanan, disertai nomor telepon yang aktif agar pesanan mudah dihubungi."
+  },
+  {
+    "id": "faq:estimasi-pengiriman",
+    "category": "pengiriman",
+    "title": "Estimasi waktu pengiriman",
+    "content": "Pengiriman dilakukan setelah status pesanan menjadi SIAP_DIKIRIM. Lama pengiriman bergantung pada jasa ekspedisi dan belum tersedia, silakan konfirmasi ke Owner Sagumi."
+  },
+  {
+    "id": "faq:kemasan-produk",
+    "category": "pengiriman",
+    "title": "Kemasan produk",
+    "content": "Produk Sagumi dikemas rapat dan kokoh sehingga aman untuk pengiriman dalam maupun luar kota Kendari."
+  },
+  {
+    "id": "faq:bahan-produk",
+    "category": "produk",
+    "title": "Bahan dasar produk",
+    "content": "Produk Sagumi berbahan dasar tepung sagu khas Kendari, Sulawesi Tenggara, dengan berbagai varian rasa."
+  },
+  {
+    "id": "faq:bebas-gluten",
+    "category": "produk",
+    "title": "Produk bebas gluten",
+    "content": "Brownies Sagu Panggang dipromosikan sebagai produk bebas gluten berbahan dasar tepung sagu. Untuk kebutuhan alergi tertentu, konfirmasi komposisi lengkap ke Owner Sagumi."
+  },
+  {
+    "id": "faq:masa-simpan",
+    "category": "produk",
+    "title": "Masa simpan produk",
+    "content": "Berapa lama produk dapat disimpan belum tersedia secara resmi. Sarannya, simpan produk dalam wadah kedap udara di tempat kering dan sejuk agar tetap renyah dan awet. Untuk tanggal kedaluwarsa (expired), silakan konfirmasi ke Owner Sagumi."
+  },
+  {
+    "id": "faq:paket-oleh-oleh",
+    "category": "produk",
+    "title": "Paket oleh-oleh",
+    "content": "Paket Oleh-Oleh Sagumi Hemat berisi 3 varian cemilan sagu pilihan dengan harga Rp50.000."
+  },
+  {
+    "id": "faq:komplain-produk",
+    "category": "keluhan",
+    "title": "Cara menyampaikan komplain",
+    "content": "Sampaikan komplain kepada Owner Sagumi dengan menyertakan ID Referensi pesanan serta foto atau video produk sebagai bukti agar dapat ditindaklanjuti."
+  },
+  {
+    "id": "faq:kebijakan-retur",
+    "category": "keluhan",
+    "title": "Kebijakan retur",
+    "content": "Kebijakan retur dan penukaran resmi belum tersedia. Komplain akan ditangani Owner Sagumi secara kasus per kasus."
+  },
+  {
     "id": "product:keripik-sagu-original",
     "category": "produk",
     "title": "Keripik Sagu Original",
