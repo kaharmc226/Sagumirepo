@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node.js 20+ and npm (version pinned in `.nvmrc`)
+- Node.js 22+ and npm (version pinned in `.nvmrc`)
 - Python 3.11+ (for `services/ai`, pinned in `services/ai/.python-version`)
 - Access to the team Supabase project (ask Kahar)
 
